@@ -130,15 +130,15 @@ Python scripts were used to automate parts of the pipeline, including:
 
 
 
-Generating standardized file names
+\-Generating standardized file names
 
-Reading dialogue metadata from Excel
+\-Reading dialogue metadata from Excel
 
-Copying and organizing audio files
+\-Copying and organizing audio files
 
-Preparing localized folders for Wwise import
+\-Preparing localized folders for Wwise import
 
-Wwise Implementation
+\-Wwise Implementation
 
 
 
@@ -146,19 +146,19 @@ Wwise Implementation
 
 
 
-English and Spanish localized sources
+\-English and Spanish localized sources
 
-Shared voice objects
+\-Shared voice objects
 
-Organized dialogue containers
+\-Organized dialogue containers
 
-VO event playback
+\-VO event playback
 
-SoundBank generation
+\-SoundBank generation
 
-Unreal Engine integration
+\-Unreal Engine integration
 
-Unreal Engine Demo
+\-Unreal Engine Demo
 
 
 
@@ -166,17 +166,17 @@ Unreal Engine Demo
 
 
 
-Interactive dialogue stations
+\-Interactive dialogue stations
 
-Language switching
+\-Language switching
 
-UI and system sound testing
+\-UI and system sound testing
 
-Ambience testing
+\-Ambience testing
 
-Wwise event triggering through Unreal
+\-Wwise event triggering through Unreal
 
-Documentation
+\-Documentation
 
 
 
