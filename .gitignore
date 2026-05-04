@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Audio files - avoid uploading heavy or private assets
+*.wav
+*.mp3
+*.ogg
+*.flac
+*.aif
+*.aiff
+
+# Video files - use links instead of uploading large media
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Unreal Engine
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+*.sln
+*.suo
+*.user
+*.opensdf
+*.sdf
+*.VC.db
+
+# Wwise
+.cache/
+GeneratedSoundBanks/
+SoundBanks/
+*.wem
+*.bnk
+*.prof
+*.akd
+
+# Temporary / backup files
+temp/
+_temp/
+backup/
+*.bak
