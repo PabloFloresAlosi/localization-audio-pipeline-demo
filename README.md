@@ -1,6 +1,6 @@
 # Localization Audio Pipeline Demo
 
-![Unreal Demo Overview](images/unreal-demo-overview.png)
+!\[Unreal Demo Overview](images/unreal-demo-overview.png)
 
 ## EN/ES Game Dialogue Pipeline — Python · Excel · Wwise · Unreal Engine
 
@@ -8,19 +8,25 @@ This project is a technical audio and localization demo showing how game dialogu
 
 The goal was to build a clean end-to-end workflow that reflects real production needs: structured metadata, consistent file naming, scalable folder organization, Wwise localization, and in-engine playback validation.
 
----
+\---
+
+
+
+YOUTUBE VIDEO: https://youtu.be/BDl4Ak92H7A?si=Q1WEco8xrgfImjF3
+
+
 
 ## Project Highlights
 
-- Built a complete EN/ES voice-over pipeline for a Life Simulation-style game demo.
-- Organized dialogue metadata using an Excel-based tracking database.
-- Created Python scripts to generate file names, copy cleaned assets, and prepare Wwise-ready folders.
-- Prepared localized VO assets for Audiokinetic Wwise.
-- Implemented and tested Wwise playback inside Unreal Engine.
-- Added runtime language switching between English and Spanish.
-- Designed the project as a portfolio-ready technical audio pipeline demo.
+* Built a complete EN/ES voice-over pipeline for a Life Simulation-style game demo.
+* Organized dialogue metadata using an Excel-based tracking database.
+* Created Python scripts to generate file names, copy cleaned assets, and prepare Wwise-ready folders.
+* Prepared localized VO assets for Audiokinetic Wwise.
+* Implemented and tested Wwise playback inside Unreal Engine.
+* Added runtime language switching between English and Spanish.
+* Designed the project as a portfolio-ready technical audio pipeline demo.
 
----
+\---
 
 ## Pipeline Overview
 
@@ -40,134 +46,134 @@ Wwise Localization Setup
 Unreal Engine Playback Test
 ```
 
----
+\---
 
 ## Tools Used
 
-| Area | Tools |
-|---|---|
-| Dialogue tracking | Microsoft Excel |
-| Recording / editing | Reaper |
-| Audio cleanup | iZotope RX |
-| Automation | Python, pandas, openpyxl |
-| Audio middleware | Audiokinetic Wwise |
-| Game engine | Unreal Engine 5 |
-| Version control | Git / GitHub |
+|Area|Tools|
+|-|-|
+|Dialogue tracking|Microsoft Excel|
+|Recording / editing|Reaper|
+|Audio cleanup|iZotope RX|
+|Automation|Python, pandas, openpyxl|
+|Audio middleware|Audiokinetic Wwise|
+|Game engine|Unreal Engine 5|
+|Version control|Git / GitHub|
 
----
+\---
 
 ## Project Scope
 
 The demo is based on a small Life Simulation-style interaction system.
 
-| Category | Details |
-|---|---|
-| Languages | English, Spanish |
-| Characters | Male Adult, Female Adult, System / Narrator |
-| Dialogue Type | Question / Response pairs |
-| Variations | A / B / C takes |
-| Implementation | Interactive Unreal buttons triggering Wwise events |
+|Category|Details|
+|-|-|
+|Languages|English, Spanish|
+|Characters|Male Adult, Female Adult, System / Narrator|
+|Dialogue Type|Question / Response pairs|
+|Variations|A / B / C takes|
+|Implementation|Interactive Unreal buttons triggering Wwise events|
 
 Dialogue categories include:
 
-- Greeting
-- Complaint
-- Work
-- Idle
-- Reaction
-- Objective
-- System
+* Greeting
+* Complaint
+* Work
+* Idle
+* Reaction
+* Objective
+* System
 
----
+\---
 
 ## Folder Structure
 
 ```text
 localization-audio-pipeline-demo/
-├── 02_CLEAN/
-├── 03_FINAL/
-├── 04_WWISE_READY/
+├── 02\\\_CLEAN/
+├── 03\\\_FINAL/
+├── 04\\\_WWISE\\\_READY/
 ├── csv/
 │   └── 02. Audio Dialogue Database.xlsx
 ├── docs/
 ├── images/
 ├── scripts/
-│   ├── 01_generate_filenames.py
-│   ├── 02_copy_clean_to_final.py
-│   └── 03_prepare_wwise_ready.py
+│   ├── 01\\\_generate\\\_filenames.py
+│   ├── 02\\\_copy\\\_clean\\\_to\\\_final.py
+│   └── 03\\\_prepare\\\_wwise\\\_ready.py
 ├── README.md
 ├── .gitignore
 └── requirements.txt
 ```
 
----
+\---
 
 ## Naming Convention
 
 The project uses a structured naming convention designed for clarity, scalability, and localization consistency.
 
 ```text
-VO_<Language>_<Character>_<Category>_<LineType>_<ID>_<Variation>.wav
+VO\\\_<Language>\\\_<Character>\\\_<Category>\\\_<LineType>\\\_<ID>\\\_<Variation>.wav
 ```
 
 Examples:
 
 ```text
-VO_EN_FA_Work_Q_003_A.wav
-VO_ES_FA_Work_Q_003_A.wav
-VO_EN_MA_Greeting_R_001_B.wav
-VO_ES_MA_Greeting_R_001_B.wav
+VO\\\_EN\\\_FA\\\_Work\\\_Q\\\_003\\\_A.wav
+VO\\\_ES\\\_FA\\\_Work\\\_Q\\\_003\\\_A.wav
+VO\\\_EN\\\_MA\\\_Greeting\\\_R\\\_001\\\_B.wav
+VO\\\_ES\\\_MA\\\_Greeting\\\_R\\\_001\\\_B.wav
 ```
 
 Where:
 
-| Token | Meaning |
-|---|---|
-| VO | Voice-over asset |
-| EN / ES | Language |
-| MA / FA / SYS | Character |
-| Greeting / Work / Reaction | Dialogue category |
-| Q / R | Question or Response |
-| 003 | Dialogue ID |
-| A / B / C | Variation |
+|Token|Meaning|
+|-|-|
+|VO|Voice-over asset|
+|EN / ES|Language|
+|MA / FA / SYS|Character|
+|Greeting / Work / Reaction|Dialogue category|
+|Q / R|Question or Response|
+|003|Dialogue ID|
+|A / B / C|Variation|
 
----
+\---
 
 ## Python Automation
 
 The project includes three Python scripts:
 
-### 01_generate_filenames.py
+### 01\_generate\_filenames.py
 
 Generates standardized VO file names from the Excel dialogue database.
 
-### 02_copy_clean_to_final.py
+### 02\_copy\_clean\_to\_final.py
 
-Copies cleaned audio files from the `02_CLEAN` folder into the final delivery structure using the Excel database as the source of truth.
+Copies cleaned audio files from the `02\\\_CLEAN` folder into the final delivery structure using the Excel database as the source of truth.
 
-### 03_prepare_wwise_ready.py
+### 03\_prepare\_wwise\_ready.py
 
 Creates a Wwise-ready localized folder structure and removes language codes from file names for Wwise localized import.
 
 Example:
 
 ```text
-VO_EN_FA_Work_Q_003_A.wav
+VO\\\_EN\\\_FA\\\_Work\\\_Q\\\_003\\\_A.wav
 ```
 
 becomes:
 
 ```text
-VO_FA_Work_Q_003_A.wav
+VO\\\_FA\\\_Work\\\_Q\\\_003\\\_A.wav
 ```
 
 inside:
 
 ```text
-04_WWISE_READY/English(US)/
+04\\\_WWISE\\\_READY/English(US)/
 ```
 
----
+\---
 
 ## Wwise Implementation
 
@@ -175,17 +181,17 @@ The Wwise side of the project focuses on localized VO organization and scalable 
 
 Key implementation points:
 
-- English and Spanish localized sources.
-- Shared Wwise voice objects.
-- Organized dialogue containers.
-- Randomized line variations.
-- VO event triggering.
-- SoundBank generation.
-- Unreal Engine integration.
+* English and Spanish localized sources.
+* Shared Wwise voice objects.
+* Organized dialogue containers.
+* Randomized line variations.
+* VO event triggering.
+* SoundBank generation.
+* Unreal Engine integration.
 
 This setup avoids duplicating logic per language and keeps the localization workflow cleaner.
 
----
+\---
 
 ## Unreal Engine Demo
 
@@ -193,43 +199,43 @@ The Unreal Engine scene is a simple interactive test environment used to validat
 
 The demo includes:
 
-- Dialogue interaction stations.
-- Button-triggered Wwise events.
-- Runtime language switching.
-- UI/system sound testing.
-- Ambience testing.
-- QA-style playback validation.
+* Dialogue interaction stations.
+* Button-triggered Wwise events.
+* Runtime language switching.
+* UI/system sound testing.
+* Ambience testing.
+* QA-style playback validation.
 
 The goal is not to build a full game, but to demonstrate that the pipeline works from spreadsheet to engine.
 
----
+\---
 
 ## Documentation
 
 Additional documentation is available in the `docs/` folder:
 
-| Document | Description |
-|---|---|
-| `00_project_foundation.pdf` | Original project planning and production phases |
-| `01_localization_audio_pipeline.pdf` | Main pipeline structure and technical overview |
-| `02_dialogue_interaction_dataset.pdf` | EN/ES dialogue dataset with interaction examples |
+|Document|Description|
+|-|-|
+|`00\\\_project\\\_foundation.pdf`|Original project planning and production phases|
+|`01\\\_localization\\\_audio\\\_pipeline.pdf`|Main pipeline structure and technical overview|
+|`02\\\_dialogue\\\_interaction\\\_dataset.pdf`|EN/ES dialogue dataset with interaction examples|
 
----
+\---
 
 ## What This Project Demonstrates
 
 This project demonstrates practical skills in:
 
-- Technical sound design
-- Dialogue asset management
-- Game localization workflows
-- Python automation
-- Wwise implementation
-- Unreal Engine audio integration
-- QA-style asset validation
-- Production pipeline thinking
+* Technical sound design
+* Dialogue asset management
+* Game localization workflows
+* Python automation
+* Wwise implementation
+* Unreal Engine audio integration
+* QA-style asset validation
+* Production pipeline thinking
 
----
+\---
 
 ## Author
 
@@ -240,3 +246,4 @@ Valencia, Spain
 Portfolio: https://pablofalosi.wixsite.com/home  
 LinkedIn: https://www.linkedin.com/in/pablofloresalosi/  
 GitHub: https://github.com/PabloFloresAlosi
+
